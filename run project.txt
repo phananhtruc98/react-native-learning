@@ -1,0 +1,5 @@
+Real device: react-native run-android
+Emulator: 
+emulator -list-avds
+emulator -avd Nexus_6_API_28
+react-native run-android
