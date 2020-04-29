@@ -1,0 +1,37 @@
+// text input 
+
+<TextInput style={styles.textinput}
+          keyboardType='email-address'
+          placeholder='Enter your email'
+          placeholderTextColor='green'
+          onChangeText={
+            (text) => {
+              this.setState(
+                (previousState) => {
+                  return {
+                    typedText: text
+                  };
+                }
+              );
+            }
+          } 
+          autoFocus={true}/>
+// kiểu password
+secureTextEntry={true}
+// kiểu email
+keyboardType='emaill-address' //ngoài ra còn có nhiều kiểu khác nữa
+// textarea
+multiline={true}
+// nút trên bàn phím 
+returnKeyType='done' phải đi cùng
+blurOnSubmit={true}
+onSubmitEditing={Keyboard.dismiss} // Import Keyboard
+// Sự kiện onChangeText
+onChangeText={
+          (text) => {this.setState(()=>{
+            return{
+              typedDescription: text
+            };
+          })}
+        }
+ 

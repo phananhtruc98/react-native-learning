@@ -1,0 +1,10 @@
+// khai báo state trong constructor
+constructor(){
+    super()
+    this.state={}
+    this.state.customStyles = {
+      color: 'red'
+    }
+}
+// Sử dụng state 
+this.state.customStyles = ???
